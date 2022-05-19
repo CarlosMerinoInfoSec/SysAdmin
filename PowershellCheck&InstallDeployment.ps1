@@ -17,14 +17,11 @@
 ############# Adjust the settings in this block as needed #############
 $networkPath = '\\[YourRemote]\[Location]\[File].msi'
 $msiPath = 'C:\Install\[File].msi'
-$logPath = 'C:\Install'
 $software = "[SoftwareName]";
 $installed = (Get-ItemProperty 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*', 
               'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*' | 
               Where { $_.DisplayName -eq $software }) -ne $null
 #######################################################################
-
-
 
 If($installed) {
     # Application is installed. Will now exit.
