@@ -10,7 +10,7 @@
     to copy and place on the local drive and then will run the installation.  If it can't connect to the remote
     share it will throw an exception and cancel the script.
 .NOTES
-    File Name       NxLogCheck&Install.ps1
+    File Name       NxLogInstall&ReplaceDefaultConfig.ps1
     Author          :Carlos Merino
     Prerequisite    :If user is not connected to network and does not have msi file locally, script will throw exception.
 #>
